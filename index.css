@@ -31,21 +31,67 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #111111;
+    background-color: #222222;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .profile {
-    float: left;
-    margin: 50px 0px 50px 250px;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    /* margin-left: 200px; */
 }
 
 .profile img.pfp {
     border-radius: 50%;
+    border-style: solid;
+    border-color: #555555;
+    border-width: 5px;
+}
+
+.socials {
+    display: flex;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.socials li {
+    display: inline-block;
+    margin: auto;
+    /* padding: 5px; */
+    /* text-align: center; */
+}
+
+.socials li a {
+    display: inline-block;
+    color: #A8B8D0;
+    font-size: 20px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #333333;
+    outline: none;
+    padding: auto;
+    /* padding-top: 1px; */
+}
+
+.socials li a:hover {
+    background-color: #222222;
 }
 
 .bio {
-    float: left;
+    float: right;
     margin: 50px 100px 100px 100px;
     padding: 50px 0px 0px 0px;
-    line-height: 1.5;
+    font-size: large;
+    line-height: 30px;
 }
