@@ -41,16 +41,11 @@ body {
     background-color: #1D1356;
 }
 
-#project, #contact {
-    margin-top: 100%;
-    padding-bottom: 25%;
-}
-
 .about {
     display: flex;
     flex-direction: row;
     margin: 0 150px 100px 150px;    
-    padding-top: 100px;
+    padding-top: 8rem;
 }
 
 .profile {
@@ -86,13 +81,12 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background-color: #2E2467;
+    background-color: #514689; 
     outline: none;
     padding: auto;
 }
-
 .socials li a:hover {
-    background-color: #1D1356;
+    background-color: #292467;
 }
 
 .bio {
@@ -115,10 +109,12 @@ body {
     display: grid;
     grid: 300px / 31% 31% 31%;
     gap: 3.5%;
+    margin-bottom: 100px;
 }
 
 .project {
     display: flex;
+    flex-wrap: wrap;
     flex-flow: column;
     flex-grow: 1;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -132,12 +128,13 @@ body {
 
 .projectImg {
     border-radius: 10px 10px 0 0;
-    height: 250px;
+    height: 14rem;
     object-fit: cover;
 }
 
 .projectDesc {
     padding: 20px;
+    height: 1.75rem;
     line-height: 1.75rem;
     font-size: 1.25rem;
 }
