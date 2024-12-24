@@ -144,3 +144,32 @@ body {
     float: right;
     color: #010409;
 }
+
+.contactGrid {
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 150px 150px;
+    /* grid: 150px / 45% 45%; */
+    gap: 10%;
+    margin-bottom: 100px;
+}
+
+.contactSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #514689;
+    color: #F9F6EE;
+    font-size: large;
+}
+
+.contactLink {
+    align-items: center;
+    text-align: center;
+    color: #F9F6EE;
+}
