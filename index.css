@@ -145,31 +145,33 @@ body {
     color: #010409;
 }
 
-.contactGrid {
-    padding: 0 20%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 150px 150px;
-    /* grid: 150px / 45% 45%; */
-    gap: 10%;
-    margin-bottom: 100px;
+.contacts {
+    display: flex;
+    list-style-type: none;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.contactSquare {
+.contacts li {
+    display: inline-block;
+    margin: auto;
+}
+
+.contacts li a {
     display: flex;
+    color: #F9F6EE;
+    font-size: 18px;
+    line-height: 36px;
+    width: 14rem;
+    height: 7rem;
+    border-radius: 10%;
+    background-color: #514689; 
+    outline: none;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 10px;
-    background-color: #514689;
-    color: #F9F6EE;
-    font-size: large;
+    text-decoration: none;
 }
-
-.contactLink {
-    align-items: center;
-    text-align: center;
-    color: #F9F6EE;
+.contacts li a:hover {
+    background-color: #292467;
 }
