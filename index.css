@@ -5,13 +5,11 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    /* background-color: #A8B8D0; */
     background-color: #F9F6EE;
     color: #333333;
 }
 
 .topnav {
-    overflow: hidden;
     background-color: #2E2467;
     position: fixed;
     top: 0;
@@ -24,7 +22,10 @@ body {
     float: left;
     font-size: 24px;
     padding: 14px 16px;
-    color: #F9F6EE;
+}
+
+.topnav a.title:hover {
+    background-color: #2E2467;
 }
 
 .topnav a {
@@ -44,7 +45,7 @@ body {
 .about {
     display: flex;
     flex-direction: row;
-    margin: 0 150px 100px 150px;    
+    margin: 0 150px 150px;    
     padding-top: 8rem;
 }
 
@@ -64,8 +65,7 @@ body {
 .socials {
     display: flex;
     list-style-type: none;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
 }
 
 .socials li {
@@ -92,24 +92,24 @@ body {
 .bio {
     float: right;
     margin: 50px;
-    padding: 50px 0px 0px 0px;
+    padding-left: 50px;
     font-size: large;
     line-height: 30px;
 }
 
 .subheading {
-    margin: auto;
-    max-width: fit-content;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    line-height: 5rem;
 }
 
 .gallery {
-    padding: 0 15%;
+    padding: 0 15% 200px;
     display: grid;
     grid: 300px / 31% 31% 31%;
     gap: 3.5%;
-    margin-bottom: 100px;
 }
 
 .project {
@@ -117,9 +117,11 @@ body {
     flex-wrap: wrap;
     flex-flow: column;
     flex-grow: 1;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
     border-radius: 10px;
+    background-color: #F9F6EE;
+    color: #333333;
 }
 
 /* .project:hover {
@@ -147,9 +149,8 @@ body {
 
 .contacts {
     display: flex;
-    list-style-type: none;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0 10%;
+    margin-bottom: 10rem;
 }
 
 .contacts li {
@@ -165,8 +166,7 @@ body {
     width: 14rem;
     height: 7rem;
     border-radius: 10%;
-    background-color: #514689; 
-    outline: none;
+    background-color: #514689;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -174,4 +174,9 @@ body {
 }
 .contacts li a:hover {
     background-color: #292467;
+}
+
+.purpleBack {
+    background-color: #62579A;
+    color: #F9F6EE;
 }
